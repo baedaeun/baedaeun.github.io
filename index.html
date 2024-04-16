@@ -3,100 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🌳어서와요 다은의 숲🌳</title>
-    <link rel="stylesheet" href="newcss.css">
-  </head>
-
+    <title>Document</title>
+</head>
 <body>
-<header>
-<h1>🌳어서와요 다은의 숲🌳</h1>
-</header>
-<nav>
-  <ul class="nav">
-    <li><a href="#">메인</a></li>
-    <li><a href="#">메뉴</a></li>
-    <li><a href="#">메뉴2</a></li>
-    <li><a href="#">더보기</a></li>
-    </ul>
-</nav>
-<section>
-  <img id="sina" src="images/시나모롤.png" width="200px" height="100px">
+    <h1 id="ftest">메롱</h1>
+    <p>자바스크립트 테스트</p>
+    <p id="test">자바스크립트 테스트
+    </p>
+    <script>
+      document.write("Hello World <br> x+y=");
+let x=5; // 변수 만들기
+let y=6;
+let z = x+y;
+document.write(z);
+document.getElementById("test").innerHTML = z;
+document.write("<br>")  //태그를 사용할때 문자처럼 "" 안에 넣음
+  //변수 사용하기
+let s1="Good";
+let s2="Morning";
+document.write(s1 +s2)
+document.write(s2.toUpperCase()+"<br>")  
  
-  ⭐로그인⭐
-        <form action="">
-            아이디: <input type= "text"><br>
-            비밀번호: <input type="password">
-            <input type="submit"value="확인"name="button1"/><br>
-  <article id="one">
-    <h4>🌙과제 링크 모음🌙</h4>
-    <ul class="me">
-      <li><a href="web2.html">관심분야(자기소개)</a> </li>
-      <li><a href="web3.html">학습, 공부</a> </li>
-      <li><a href="web4.html">css 연습</a> </li>
-      <li> <a href="javatest.html">javaScript 연습</a></li>
-     </ul>
-     <article id="two">   
-      <h3>🐰좋아하는 캐릭터🐻</h3>
-      <table>
-        <tr><td><img src="images/웨이들디 커비.png"> </td>
-         <td><p>커비와 웨이들디<br>
-          좋아하는것:딸기케이크<br>
-          싫어하는것:딸기케이크를 뺏어가는 사람<br>
-          둘의 관계:적이자 동료인 관계
-         </p>
-         </td> </tr>
-      </table>
-      <article id="three">   
-        <h3> 취향을 골라 골라</h3>
-        <form>
-          음식:
-          <input type="checkbox" name="fruits" value="apple" >삼겹살
-          <input type="checkbox" name="fruits" value="grape">떡볶이
-          <input type="checkbox" name="fruits" value="orange">치킨
-          <input type="checkbox" name="fruits" value="orange">햄버거
-          <input type="checkbox" name="fruits" value="orange">야채곱창
-          <input type="checkbox" name="fruits" value="orange">냉면
-          <br>
-          <br>
-          그외 음식을 적어주세요<br />
-          <textarea name="feedback" rows="5" cols="50"></textarea><br>
-          색:
-          <input type="checkbox" name="fruits" value="apple" >하늘
-          <input type="checkbox" name="fruits" value="grape">핑크
-          <input type="checkbox" name="fruits" value="orange">노랑
-          <input type="checkbox" name="fruits" value="orange">연두
-          <input type="checkbox" name="fruits" value="orange">연보라<br>
-          민초:
-          <input type="range" min="1"max="10" value="1"><br>
-          
-        </form> 
-        <article id="f"> 
-      </ul>
-      <h3>오늘 할 일</h3>
-      <ul class="circle">
-      <li>애사비 챙겨먹기</li>
-      <li>방청소</li>
-      <li>만보 이상 걷기</li>
-      <li>시험 공부하기</li>
-    </ul>
+//입출력
+let age = parseInt(prompt("나이입력:"));
+document.write("당신은 내년이면 "+(age+1)+"살 입니다."); 
+
+</script>
+
+<br>
+<button onclick="sub()">이름입력버튼</button>
 
 
+<script>
+    
+    function sub(){
+    const name = prompt('이름:');
+    document.getElementById("test").innerHTML ="Welcome: " + name + "님 환영합니다!";
+    }
+    
+    </script>
+    <h1 id="name">함수 연습</h1>
+    <button onclick="sub1()">함수연습버튼</button>
 
+    <script>
+    
+        function sub(){
+        const name = prompt('이름:');
+        document.getElementById("test").innerHTML ="Welcome: " + name + "님 환영합니다!";
+        }
+        function sub1(){
+e = document.getElementById("ftest");
+e.style.color = "red";
+}
 
-
-</section>   
-<footer>
- <form>
-홈페이지 만족도 <br>
-<input type="radio" name="gender" value="male">만족 
-<input type="radio" name="gender" value="female">그럭저럭 
-<input type="radio" name="gender" value="female">불만족
- </form>
- 
-
-</footer>
-
-
+        
+  </script>
+    <h1 id="time">시간:</h1>
+    <h1 id="ttest">시간</h1>
+    <script>
+      //Date 현재 시간값을 갖는 객체와 if
+      let time = new Date().getHours();
+      let msg;
+      document.getElementById("ttest").innerHTML = "TIME:" + time;
+      if (time<12){
+      msg =" Good Morning";}
+      else{
+      msg = "Good Afternoon";
+      }
+      document.getElementById("ttest").innerHTML = msg;
+      </script>
+    
 
 </body>
+</html>
 

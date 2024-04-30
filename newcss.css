@@ -46,3 +46,7 @@ ul.nav{
 text-decoration: none;
 color: black;
  }       
+ #time{
+    float: top;
+    text-align: center;
+    }   

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Document</title>
+<script>
+    function change(){
+        let p = document.getElementById("fs");
+    p.innerHTML="<img src='images/시나모롤.png'>나의 강아지";   }
+function change1(obj, size, color){
+    obj.style.color = color;
+    obj.style.fontSize = size;
+}
+</script>
+</head>
+<body>
+   <h3>innerHTML 활용: 아래 글자에 클릭하면 예쁜 강아지가 보입니다.</h3>
+   <hr>
+   <p id="fs" style="color: aqua;" onclick=" change()">여기에
+    <span style="color: darkkhaki;">클릭하세요
+</span></p> 
+
+<button onclick="change1(this,'30px','red')">대한</button>
+<button onclick="change1(this,'35px','blue')">민국</button>
+<button onclick="change1(this,'40px','pink')">만세</button>
+</body>
+</html>
